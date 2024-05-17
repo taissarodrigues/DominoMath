@@ -15,7 +15,7 @@ struct DominoBoard: View {
 
         ZStack {
             Rectangle()
-                .fill(Color(hex: "2B8B81"))
+                .fill(Color(.fundoVerde))
                 .edgesIgnoringSafeArea(.all)
                 .frame(width: boardWidth * 4, height: boardHeight * 1.0)
 

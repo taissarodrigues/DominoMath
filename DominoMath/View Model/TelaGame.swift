@@ -1,13 +1,13 @@
 //
-//  ContentView.swift
+//  TelaGame.swift
 //  DominoMath
 //
-//  Created by user247327 on 15/10/23.
+//  Created by Taissa Vitoria Rodrigues de Paula on 17/05/24.
 //
 
 import SwiftUI
 
-struct ContentView: View {
+struct TelaGame: View {
     
     @State private var isOnboardingDismissed = false
     @State private var isOnboardingPresented = false
@@ -31,7 +31,7 @@ struct ContentView: View {
                     .fontWeight(.bold)
                     .foregroundColor(.white)
                     .padding()
-                    .background(Color(hex: "2B8B81"))
+                    .background(Color(.fundoVerde))
                     .cornerRadius(15)
                     .rotationEffect(.degrees(180))
                     .offset(x:-1 , y: -320)
@@ -53,7 +53,7 @@ struct ContentView: View {
                     .fontWeight(.bold)
                     .foregroundColor(.white)
                     .padding()
-                    .background(Color(hex: "2B8B81"))
+                    .background(Color(.fundoVerde))
                     .cornerRadius(15)
                     .offset(x: 1, y: 445)
                 
@@ -124,3 +124,7 @@ struct ContentView: View {
 }
 
 
+
+#Preview {
+    TelaGame()
+}

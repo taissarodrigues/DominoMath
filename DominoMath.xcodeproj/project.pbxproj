@@ -11,9 +11,10 @@
 		43936B212ADC8192007B0EEF /* DominoBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43936B202ADC8192007B0EEF /* DominoBoard.swift */; };
 		43936B232ADC9489007B0EEF /* DominoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43936B222ADC9489007B0EEF /* DominoModel.swift */; };
 		43BE7D962ADC2E4E00674198 /* DominoMathApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BE7D952ADC2E4E00674198 /* DominoMathApp.swift */; };
-		43BE7D982ADC2E4E00674198 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BE7D972ADC2E4E00674198 /* ContentView.swift */; };
 		43BE7D9A2ADC2E5100674198 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43BE7D992ADC2E5100674198 /* Assets.xcassets */; };
 		43BE7D9D2ADC2E5100674198 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43BE7D9C2ADC2E5100674198 /* Preview Assets.xcassets */; };
+		8C3518322BF7D2F000705025 /* Token Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3518312BF7D2F000705025 /* Token Colors.swift */; };
+		8C3518342BF7E3FE00705025 /* TelaGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3518332BF7E3FE00705025 /* TelaGame.swift */; };
 		CE11C9E32B11143600A44E1A /* GameOverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE11C9E22B11143600A44E1A /* GameOverView.swift */; };
 		CE11C9E52B111E3500A44E1A /* AppContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE11C9E42B111E3500A44E1A /* AppContext.swift */; };
 		CE2832422B06B49100F84959 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2832412B06B49100F84959 /* OnboardingView.swift */; };
@@ -26,9 +27,10 @@
 		43936B222ADC9489007B0EEF /* DominoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DominoModel.swift; sourceTree = "<group>"; };
 		43BE7D922ADC2E4E00674198 /* DominoMath.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DominoMath.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43BE7D952ADC2E4E00674198 /* DominoMathApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DominoMathApp.swift; sourceTree = "<group>"; };
-		43BE7D972ADC2E4E00674198 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		43BE7D992ADC2E5100674198 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		43BE7D9C2ADC2E5100674198 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8C3518312BF7D2F000705025 /* Token Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Token Colors.swift"; sourceTree = "<group>"; };
+		8C3518332BF7E3FE00705025 /* TelaGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaGame.swift; sourceTree = "<group>"; };
 		CE11C9E22B11143600A44E1A /* GameOverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GameOverView.swift; path = "DominoMath/View Model/GameOverView.swift"; sourceTree = SOURCE_ROOT; };
 		CE11C9E42B111E3500A44E1A /* AppContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContext.swift; sourceTree = "<group>"; };
 		CE2832412B06B49100F84959 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
@@ -65,8 +67,10 @@
 		43BE7D942ADC2E4E00674198 /* DominoMath */ = {
 			isa = PBXGroup;
 			children = (
+				8C35182A2BF7D26D00705025 /* Utils */,
+				8C3518292BF7D24800705025 /* Resources */,
+				8C3518282BF7D21000705025 /* App */,
 				43BE7DA52ADC2ED900674198 /* View */,
-				43BE7D992ADC2E5100674198 /* Assets.xcassets */,
 				43BE7D9B2ADC2E5100674198 /* Preview Content */,
 			);
 			path = DominoMath;
@@ -85,13 +89,44 @@
 			children = (
 				CEA2507F2AE83D3F00E3AC5B /* InicioView.swift */,
 				CE2832412B06B49100F84959 /* OnboardingView.swift */,
-				43BE7D972ADC2E4E00674198 /* ContentView.swift */,
 				CE11C9E22B11143600A44E1A /* GameOverView.swift */,
+				8C3518332BF7E3FE00705025 /* TelaGame.swift */,
 				CE04A9DB2B03FC1900E51F97 /* Elements */,
 				CE04A9D62AF17F7600E51F97 /* Model */,
 			);
 			name = View;
 			path = "View Model";
+			sourceTree = "<group>";
+		};
+		8C3518282BF7D21000705025 /* App */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		8C3518292BF7D24800705025 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				43BE7D992ADC2E5100674198 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8C35182A2BF7D26D00705025 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				8C35182E2BF7D2C700705025 /* Tokens */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		8C35182E2BF7D2C700705025 /* Tokens */ = {
+			isa = PBXGroup;
+			children = (
+				8C3518312BF7D2F000705025 /* Token Colors.swift */,
+			);
+			path = Tokens;
 			sourceTree = "<group>";
 		};
 		CE04A9D62AF17F7600E51F97 /* Model */ = {
@@ -141,7 +176,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
-				LastUpgradeCheck = 1430;
+				LastUpgradeCheck = 1530;
 				TargetAttributes = {
 					43BE7D912ADC2E4E00674198 = {
 						CreatedOnToolsVersion = 14.3.1;
@@ -186,11 +221,12 @@
 				CEA250802AE83D3F00E3AC5B /* InicioView.swift in Sources */,
 				43936B1B2ADC5394007B0EEF /* Domino.swift in Sources */,
 				CE11C9E32B11143600A44E1A /* GameOverView.swift in Sources */,
-				43BE7D982ADC2E4E00674198 /* ContentView.swift in Sources */,
+				8C3518342BF7E3FE00705025 /* TelaGame.swift in Sources */,
 				43936B212ADC8192007B0EEF /* DominoBoard.swift in Sources */,
 				CE2832422B06B49100F84959 /* OnboardingView.swift in Sources */,
 				43BE7D962ADC2E4E00674198 /* DominoMathApp.swift in Sources */,
 				CE11C9E52B111E3500A44E1A /* AppContext.swift in Sources */,
+				8C3518322BF7D2F000705025 /* Token Colors.swift in Sources */,
 				43936B232ADC9489007B0EEF /* DominoModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -234,6 +270,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -294,6 +331,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;

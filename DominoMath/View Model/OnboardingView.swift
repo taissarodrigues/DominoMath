@@ -32,12 +32,12 @@ struct OnboardingView: View {
                         .foregroundColor(.black)
                         .padding(.leading, 20)
                     
-                    NavigationLink(destination: ContentView()) {
+                    NavigationLink(destination: TelaGame()) {
                         Text("Vamos lá!")
                             .font(.largeTitle) //Aumenta a fonte
                             .foregroundColor(Color(.white))
                             .padding(EdgeInsets(top: 20, leading: 50, bottom: 20, trailing: 50))
-                            .background(Color(hex: "E74F36"))
+                            .background(Color(.vermelho))
                             .cornerRadius(35)
                             .font(.system(size:23))
                             .offset(x: 210, y: 20)
@@ -47,7 +47,7 @@ struct OnboardingView: View {
             }
         
             .padding(20)
-            .background(Color(hex: 0xD9D9D9))
+            .background(Color(.cinza))
             .cornerRadius(20)
             
         }
@@ -64,15 +64,15 @@ struct OnboardingView_Previews: PreviewProvider {
     }
 }
 
-extension Color {
-    init(hex: Int, alpha: Double = 1.0) {
-        self.init(
-            .sRGB,
-            red: Double((hex >> 16) & 0xff) / 255,
-            green: Double((hex >> 8) & 0xff) / 255,
-            blue: Double(hex & 0xff) / 255,
-            opacity: alpha
-        )
-    }
-}
+//extension Color {
+//    init(hex: Int, alpha: Double = 1.0) {
+//        self.init(
+//            .sRGB,
+//            red: Double((hex >> 16) & 0xff) / 255,
+//            green: Double((hex >> 8) & 0xff) / 255,
+//            blue: Double(hex & 0xff) / 255,
+//            opacity: alpha
+//        )
+//    }
+//}
 

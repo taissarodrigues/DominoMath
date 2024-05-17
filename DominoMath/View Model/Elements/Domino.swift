@@ -72,7 +72,7 @@ struct Domino: View {
         .frame(width: 80, height: 120)
         
     }}
-
+//
 //struct Domino_Previews: PreviewProvider {
 //    static var previews: some View {
 //            ForEach(dominoes) { dominoset in
