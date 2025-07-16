@@ -10,6 +10,9 @@ Aprendizado Divertido : Combina a jogabilidade do domíno com desafios matemáti
 Interface Intuitiva : Design atraente e fácil de usar para todas as idades.
 
 ![Telas Projeto](https://raw.githubusercontent.com/juliams1/DominoMath/main/telasApp.png)
+<img width="1920" height="1080" alt="DominoMath_Portifolio-2" src="https://github.com/user-attachments/assets/d531e756-a953-4fc9-ad27-46be9094ace6" />
+
+
 
 ## Como executar
 Faça o clone do repositório.
